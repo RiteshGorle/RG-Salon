@@ -1,0 +1,960 @@
+/* WebSite Name: GORLE SALON
+   Made by: Ritesh Gorle
+   Created: AUGUST 2022
+   Content: SALON
+*/
+
+/*****************************************
+Table Of Contents:
+
+ 00. BASIC CSS STYLES
+
+ 01. SECTION 01: NAVIGATION BAR
+ 02. SECTION 02: HEADING
+ 03. SECTION 03: HIDDEN-SHOW
+ 04. SECTION 04: ICONS
+ 05. SECTION 05: IMAGE AND HEADING 02 START
+ 06. SECTION 06: HEADING ANIMATION
+ 07. SECTION 07: CARDS
+ 08. SECTION 08: HEAD PARA
+ 09. SECTION 09: HIDDEN-SHOW 2
+ 10. SECTION 10: FOOTER
+
+ 000: MEDIA QUERIES
+
+******************************************/
+
+
+/***********************************/
+/*      00. BASIC CSS STYLES      */
+/***********************************/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'Alata';
+  background-color: #ffffcc;
+}
+
+section {
+    display: block;
+    padding:0 4em 5em;
+}
+
+h1, h2, h3 {
+    color:#2E2E2E
+}
+
+p {
+    font-family: lato;
+    color: #717171;
+    line-height: 1.4;
+    text-align: justify
+}
+
+
+/*-------------Button ---------------- */
+
+.All-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-weight: 500;
+  background: red;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+
+
+
+/*-------------Heading-All---------------- */
+.Heading-All h1 {
+text-align: center;
+    font-size:30px; font-weight:300; color:#222; letter-spacing:1px;
+    text-transform: uppercase;
+
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.Heading-All h1:after,.Heading-All h1:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #c50000;
+    border-top: 1px solid #c50000;
+    height: 5px;
+  background-color:#f8f8f8;
+}
+
+
+
+/****************************************/
+/*   01. SECTION 01: NAVIGATION BAR     */
+/****************************************/
+
+.NAVIGATION {
+  overflow: hidden;
+  background-color: red;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.NAVIGATION a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  
+  padding: 18px 60px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 900;
+}
+
+.NAVIGATION a:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+
+@media only screen and (max-width : 380px) { 
+
+.NAVIGATION a {
+  font-size: 60px;
+  padding: 6px 8px;
+}
+  }
+
+@media only screen and (max-width : 480px) { 
+
+.NAVIGATION a {
+  font-size: 10px;
+  padding: 8px 10px;
+}
+  }
+
+@media only screen and (max-width : 600px) { 
+
+.NAVIGATION a {
+  font-size: 14px;
+  padding: 10px 10px;
+}
+  }
+
+@media only screen and (max-width : 1024px) { 
+
+.NAVIGATION a {
+  font-size: 14px;
+  padding: 10px 10px;
+}
+}
+
+
+
+/***********************************/
+/*    02. SECTION 02: HEADING      */
+/***********************************/
+.HEADING h1 {
+  text-align:center; 
+  font-size:50px; 
+  text-transform:uppercase; 
+  font-family: 'Akronim';
+  color:#222; 
+  letter-spacing:1px;
+  font-weight:400;
+}
+.HEADING h1 span {
+    margin-top: 5px;
+    font-size:15px; 
+    color:#444; 
+    word-spacing:1px; 
+    font-weight:normal; 
+    letter-spacing:2px;
+    text-transform: uppercase; 
+    font-family:"Raleway", sans-serif; 
+    font-weight:500;
+
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.HEADING h1 span:after,.HEADING h1 span:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    height: 5px;
+    background-color:#f8f8f8;
+}
+
+
+
+
+
+/****************************************/
+/*   03. SECTION 03: HIDDEN-SHOW         */
+/****************************************/
+.HIDDEN-SHOW {
+  display: flex;
+  flex-direction: row ;
+  padding: 
+}
+
+div.sec1 h2{
+  text-align: center;
+}
+
+div .sec1 p, .sec2 p, .sec3 p, .sec4 p, .sec5 p{
+  display: flex;
+  color: black;
+  font-size: 14px;
+  justify-content: center;
+  padding: 10px;
+}
+
+div.sec1{
+  flex:1;
+  
+}
+
+div.sec2{
+  flex:2;
+  
+}
+
+.sal{
+    border-radius: 10px;
+    border: 4px solid red;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  #my-content { display: none; }  /* hide it elsewhere */
+
+  #why-content { display: block; }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  #my-content { display:block; }  /* show it on big screens */
+   
+   #why-content { display: none; }
+}
+
+
+
+
+
+/**********************************************/
+/*        04. SECTION 04: ICONS               */
+/*********************************************/
+#Six-ICONS ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+    #Six-ICONS ul li {
+        list-style-type: none;
+        display: inline-block;
+        width: 16%;
+        text-align: center;
+    }
+
+        #Six-ICONS ul li .fas, #Six-ICONS ul li .fab {
+            font-size: 80px;
+            color:#1aff1a;
+        }
+
+        #Six-ICONS ul li div {
+            width: 115px;
+            padding: 15px;
+            border-radius: 6px;
+            border: 3px solid transparent;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+
+            -webkit-transition: all .2s ease-in;
+            transition: all .2s ease-in
+        }
+
+        
+        
+            #Six-ICONS ul li div a {
+                text-decoration: none;
+            }
+
+        #Six-ICONS ul li span {
+            display: block;
+            padding-top: 15px;
+            color: black;
+                 
+        }
+
+#Six-ICONS #Six-ICONS-footer {
+    text-align: center;
+    padding-top: 60px
+}
+
+
+/**********************************************/
+/* 05. SECTION 05: IMAGE AND HEADING 02 START  */
+/*********************************************/
+
+.col-5 {
+    width: 40%;
+    display: inline-table;    
+}
+
+.col-7 {
+    width: 60%;
+    display: inline-table;
+}
+
+.sec-heading {
+    text-align: center;
+    font-size: 40px;
+    padding: 1em 0;
+    margin: 0;
+}
+
+
+#SECTION-05 {
+    background-color: #b3ffb3;
+}
+    
+    #SECTION-05 img {
+        height:300px;
+        border: 4px solid red;
+        border-radius: 20px;
+    }
+    #SECTION-05 h2 {
+        font-weight: 500;
+        font-size: 30px
+    }
+
+    #SECTION-05 p {        
+        margin-bottom: 20px;
+        color: black;
+    }
+
+    .SECTION-05-img {
+        float: left;    
+    }
+
+
+
+
+/****************************************/
+/*  06. SECTION 06: HEADING ANIMATION    */
+/****************************************/
+.ANIMATION{
+  background: url('salon8.jpg');
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.head {
+  font-size: 200%;
+  transition: 1s;
+  word-spacing: 0.5em;
+  letter-spacing: 0.2em;
+  color: white;
+}
+
+.head:hover{
+  font-size:300%;
+  color: red;
+}
+
+/****************************************/
+/*       07. SECTION 07: CARDS           */
+/****************************************/
+.SECTION-07 {
+  text-align: center;
+}
+
+.heading {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.button-section {
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: middle;
+  text-align: center;
+  padding:10px;
+  
+}
+
+.card {
+  background: #fff;
+  border-radius: 3px;
+  display: inline-block;
+  height: 135px;
+  margin: 1rem;
+  position: relative;
+  width: 300px;
+  padding:25px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  
+  &:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    cursor: default;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.SECTION-07-btn {
+  background: red;
+  color: #fff;
+  display:inline-block;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  text-overflow: ellipsis;
+  transition: 0.2s box-shadow ease-in-out, 0.2s background-color ease-in-out;
+  white-space: nowrap;
+  padding: 1.4em 2em;
+}
+
+
+.text {
+  font-weight:900;
+  font-size: 14px;
+  margin: 15px 0;
+}
+
+
+
+.btn-small-screen {
+  border-radius: 50%;
+  
+}
+
+@media all and (max-width: 800px) {
+  .button-section {
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
+
+/****************************************/
+/*     08. SECTION 08: HEAD PARA        */
+/****************************************/
+.HEAD-PARA{
+  background-color: red;
+  max-width:920px;
+  padding-left:200px;
+  padding-right:200px;
+  margin:0 auto;
+  padding:40px;
+  border-radius: 20px;
+}
+
+.HEAD-PARA h2, .HEAD-PARA p{
+  display:flex;
+  self-content: end;
+  color: white;
+}
+
+
+
+.All-btn1 {
+  width: 130px;
+  height: 40px;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-weight: 500;
+  background: #1aff1a;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+
+
+/****************************************/
+/*  09. SECTION 09: HIDDEN-SHOW 2       */
+/****************************************/
+.HIDDEN-SHOW{
+  display: flex;
+  flex-direction: row ;
+  padding: 
+}
+
+div .sec3 p, .sec4 p, .sec5 p{
+  display: flex;
+  color: black;
+  font-size: 42px;
+  font-weight: 600;
+  justify-content: center;
+  padding: 10px;
+}
+
+div.sec3{
+  flex:1;
+ 
+}
+
+div.sec4{
+  flex:1;
+  
+}
+
+div.sec5{
+  flex:1;
+  
+}
+
+
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+   #why-content { display: block; } /* hide it elsewhere */
+
+  
+}
+
+@media screen and (min-width: 601px) and (max-width: 2400px) {
+  #why-content { display: none; }  /* show it on big screens */
+   
+   
+}
+
+
+
+/****************************************/
+/*        10. SECTION 10: FOOTER         */
+/****************************************/
+
+.SECTION-10-main {
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: black;
+  border-radius: 30px;
+}
+
+.SECTION-10-main ul {
+  list-style: none;
+}
+
+.SECTION-10-main h1 {
+  font-size: 22px;
+  line-height: 117%;
+  color: red;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.SECTION-10-main h2 {
+  color:red;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.SECTION-10-main ul li a {
+  color: #1aff1a;
+  text-decoration:none;
+}
+
+#SECTION-10 {
+ background: url('salon8.jpg');
+  border-top: 1px solid #6EB981;
+  font-size: 17px;
+  padding: 15px 5px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+#footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.contact-details {
+  margin-top: 20px;
+}
+
+.contact-details li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.contact-details li a {
+  text-decoration:none;
+  color: #1aff1a;
+}
+
+.contact-details .fa {
+  color: #f1f1f1;
+  margin-right: 10px;
+}
+
+.social-cons{
+  padding:20px 0;
+}
+
+.social-cons .logosqure a{
+  padding:0 10px;
+  text-decoration:none;
+  color:white;
+  font-size:22px;
+}
+
+.serv ul li{
+  padding:5px 0;
+}
+
+@media only screen and (max-width: 749px) {
+  .SECTION-10-main {
+    padding:20px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  }
+    .social-ico{
+      padding:20px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .SECTION-10-main {
+    grid-template-columns: 1fr;
+  }
+  .social-cons{
+    padding:20px 0;
+  }
+  .serv{
+    padding:20px 0;
+  } 
+
+}
+
+
+
+
+/**********************************************/
+/*           SECTION 000: MEDIA QUERIES        */
+/*********************************************/
+
+              /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+              /*                    DESKTOP                 */
+              /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+/**********************************%%%%%%%%%%%%%%%%%%%%%%******************************************/
+/********************************** Desktops and laptops ******************************************/
+/**********************************%%%%%%%%%%%%%%%%%%%%%%******************************************/
+
+@media only screen and (max-width : 1280px) {  
+    
+}
+
+
+/**********************************%%%%%%%%%%%%%%%%%%%%%%******************************************/
+/***********************    iPads to Smartphone for Common Elements       *************************/
+/**********************************%%%%%%%%%%%%%%%%%%%%%%******************************************/
+@media only screen and (max-width : 1024px) {
+
+    
+
+
+
+    #SECTION-05 .col-5 {
+        display: block;
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    #SECTION-05 .col-7 {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+             
+}
+
+
+/**********************************%%%%%%%%%%%%%%%%%%%%%%******************************************/
+/**********************************   iPads (portrait)    *****************************************/
+/**********************************%%%%%%%%%%%%%%%%%%%%%%******************************************/  
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+
+    section {
+        padding: 0 3em 3em;
+    }
+
+    .sec-heading {
+        padding:1em 0;
+    }
+
+    #Six-ICONS ul li {
+        width: 30%;
+    }
+
+    #SECTION-05 img {
+        height: 230px;
+
+    }
+
+}
+
+     
+
+               /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+               /*                    TABLET                 */
+               /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+/**********************************%%%%%%%%%%%%%%%%%%%%%%******************************************/
+/**********************************   iPads (landscape)    *****************************************/
+/**********************************%%%%%%%%%%%%%%%%%%%%%%******************************************/ 
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {  
+    
+    section {
+        padding-bottom: 3em;
+    }
+
+    .sec-heading {
+        padding:1em 0;
+    }
+    
+    
+    .sec-heading {
+        font-size: 30px;
+    }
+
+    #Six-ICONS ul li {
+        width: 30%;
+    }
+
+    #Six-ICONS ul li .fas, #Six-ICONS ul li .fab {
+        font-size: 60px;
+    }
+
+}
+
+
+/**********************************%%%%%%%%%%%%%%%%%%%%%%******************************************/
+/******************************** Mini Tablet and Big Mobile *************************************/
+/**********************************%%%%%%%%%%%%%%%%%%%%%%******************************************/ 
+@media only screen and (min-width : 640px) and (max-width : 760px) and (orientation : landscape) {  
+    
+    section {
+        padding: 0 2em 3em;
+    }
+
+    .sec-heading {
+        font-size: 26px;
+        padding:1em 0;
+    }
+
+    
+
+    #SECTION-05 h2 {
+        font-size: 24px;
+    }
+
+    #Six-ICONS ul li {
+        width: 30%;
+    }
+
+    #Six-ICONS ul li .fas, #Six-ICONS ul li .fab {
+        font-size: 60px;
+    }
+
+    #Six-ICONS #Six-ICONS-footer {
+        padding-top: 40px;
+    }
+}
+
+
+
+/**********************************%%%%%%%%%%%%%%%%%%%%%%******************************************/
+/********************************       Mini Tablet           *************************************/
+/**********************************%%%%%%%%%%%%%%%%%%%%%%******************************************/ 
+@media only screen and (max-width : 600px) {  
+     section {
+        display: block;
+        padding: 0 2em 5em;
+    }
+
+    .sec-heading {
+        font-size: 26px;
+    }
+    
+    
+    .col-5 {
+        width: 100%;
+    }
+
+    .col-7 {
+        width: 100%;
+    }
+
+    .sec-heading {
+        padding: 1em 0;
+    }
+
+    .SECTION-05-img {
+        float: none;
+        text-align: center;
+    }
+
+    #SECTION-05 img {
+        height: 350px;
+    }
+
+    #SECTION-05 h2 {
+        text-align: center;
+        font-size: 24px;
+    }
+    
+    .btn-footer {
+        text-align: center;
+    }
+
+    #Six-ICONS ul li {
+        width: 32.5%;
+    }
+
+    
+}
+                            /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+                            /*                    MOBILE                  */
+                            /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+/**********************************%%%%%%%%%%%%%%%%%%%%%%******************************************/
+/****************************   Smartphones (portrait and landscape)    **************************/
+/**********************************%%%%%%%%%%%%%%%%%%%%%%******************************************/ 
+@media only screen and (max-width : 480px) {  
+    
+
+    
+    section {
+        padding: 0 1em 3em;
+    }
+
+    .sec-heading {
+        padding: 1em 0;
+    }
+
+    #SECTION-05 img {
+        height: 230px;
+    }
+
+    #Six-ICONS ul li {
+        width: 38%;
+    }
+    
+    #Six-ICONS ul li:nth-child(even) {
+        margin-left: 40px;
+    }
+
+    #Six-ICONS ul li:nth-child(odd) {
+        margin-right: 40px;
+    }
+    
+    
+}
+
+
+/**********************************%%%%%%%%%%%%%%%%%%%%%%******************************************/
+/****************************   Small Devices (portrait and landscape)    **************************/
+/**********************************%%%%%%%%%%%%%%%%%%%%%%******************************************/ 
+@media only screen and (max-width : 380px) {  
+    
+
+    #SECTION-05 img {
+        height: 180px;
+    }
+
+    #Six-ICONS ul li {
+        width: 40%;
+    }
+
+    #Six-ICONS ul li:nth-child(even) {
+        margin-left: 20px;
+    }
+
+    #Six-ICONS ul li:nth-child(odd) {
+        margin-right: 20px;
+    }
+
+    #Six-ICONS ul li div {
+        padding: 15px 5px;
+    }
+}
+
+
+
+/**********************************%%%%%%%%%%%%%%%%%%%%%%******************************************/
+/************************** X-Tra Small Devices  (portrait and landscape) *************************/
+/**********************************%%%%%%%%%%%%%%%%%%%%%%******************************************/ 
+@media only screen and (max-width : 320px) {  
+    
+    #Six-ICONS ul li:nth-child(odd) {
+        margin-right: 0;
+    }
+
+    #Six-ICONS ul li:nth-child(even) {
+        margin-right: 0;
+    }
+
+    #Six-ICONS ul li {
+        width: 45%;
+    }
+
+        #Six-ICONS ul li div {
+            padding: 15px 5px;
+        }
+
+    
+}
+
+
+
+
+
+
